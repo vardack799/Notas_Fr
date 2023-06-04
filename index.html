@@ -4,24 +4,21 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Gestion de usuarios</title>
+    <title>Gestion de estudiantes</title>
 </head>
 
 <body>
     <header>
-        <h1>Gestion de usuarios</h1>
+        <h1>Gestion de estudiantes</h1>
     </header>
     <main>
-        <section>
-            <button id="registrarBtn">Registrar estudiante </button>
-        </section>
         <section>
             <table id="estudiantesTb">
                 <thead>
                     <tr>
                         <th>Codigo</th>
-                        <th>Nombre</th>       
-                        <th>Apellido</th>
+                        <th>nombres</th>       
+                        <th>Apellidos</th>
                         <th></th><!-- modificar --> 
                         <th></th><!-- eliminar -->
                         <th></th> <!-- notas -->
@@ -32,18 +29,22 @@
             </table>
         </section>
         <section>
+            <button id="registrarBtn">Registrar estudiante </button>
+        </section>
+        <section>
             <form>
+                <h1 id="titulo"></h1>
                 <label>
                     <span>Codigo: </span>
-                    <input type="number" name="codigo" id="codigoId" required>
+                    <input type="number" id="codigoId" required>
                 </label>
                 <label>
                     <span>Nombre: </span>
-                    <input type="text" maxlength="200" name="nombre" id="nombresId" required>
+                    <input type="text" maxlength="200" id="nombresId" required>
                 </label>
                 <label>
                     <span>Apellido: </span>
-                    <input type="text" maxlength="200" name="apellido" id="apellidosId" required>
+                    <input type="text" maxlength="200" id="apellidosId" required>
                 </label>
                 <section>
                     <br>
@@ -53,12 +54,9 @@
         </section>
     </main>
     <footer>
-        <p>Programación avanzada</p>
-        <br>
-        <p>@2023</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="js/gestionUsuarios.js"></script>
+    <script src="js/gestionEstudiantes.js"></script>
 </body>
 
 </html>
