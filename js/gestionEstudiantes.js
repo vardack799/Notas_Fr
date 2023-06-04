@@ -56,7 +56,7 @@ $(document).ready(function () {
 
             // Validar que no haya campos vacíos
             if (!codigo || !nombres || !apellidos) {
-                alert("No pueden haber campos vacíos");
+                alert("Ingrese la informacion completa");
                 return;
             }
 
